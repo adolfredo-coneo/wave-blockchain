@@ -1,0 +1,15 @@
+mkdir wave-portal
+cd wave-portal
+yarn init -y
+
+//hardhat
+yarn add -D hardhat
+npx hardhat
+
+//git
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/adolfredo-coneo/wave-portal.git
+git push -u origin main
