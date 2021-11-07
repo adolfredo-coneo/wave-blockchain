@@ -11,6 +11,10 @@ npx hardhat run scripts/run.js
 //deploy locally
 npx hardhat node
 npx hardhat run scripts/deploy.js --network localhost
+npx hardhat run scripts/deploy.js --network rinkeby
+
+//dotenv
+yarn add dotenv
 
 //git
 git init
