@@ -6,6 +6,10 @@ yarn init -y
 yarn add -D hardhat
 npx hardhat
 
+npx hardhat run scripts/run.js
+
+npx hardhat node
+
 //git
 git init
 git add .
