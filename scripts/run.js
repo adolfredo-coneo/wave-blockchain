@@ -10,15 +10,16 @@ const main = async () => {
   let waveCount;
   waveCount = await waveContract.getTotalWaves();
 
-  let waveTxn = await waveContract.wave();
+  //Adding waves
+  let waveTxn = await waveContract.wave('This is the end!');
   await waveTxn.wait();
   waveCount = await waveContract.getTotalWaves();
 
-  waveTxn = await waveContract.connect(randomPerson).wave();
+  waveTxn = await waveContract.connect(randomPerson).wave('Nothing last forever, even cold november rain');
   await waveTxn.wait();
   waveCount = await waveContract.getTotalWaves();
 
-  const waversList = await waveContract.getWavers();
+  const waversList = await waveContract.getAllWaves();
   console.log('Wavers:', waversList);
 };
 
